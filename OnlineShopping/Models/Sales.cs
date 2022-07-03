@@ -23,6 +23,6 @@ namespace OnlineShopping.Models
         [StringLength(30)]
         public string SalesStatus { get; set; }
         [ScaffoldColumn(false)]
-        public DateTime CreatedDate { get; set; }=DateTime.Now
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
     }
 }
