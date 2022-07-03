@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OnlineShopping.Models
 {
@@ -31,7 +32,10 @@ namespace OnlineShopping.Models
 
         [ScaffoldColumn(false)]
         public bool IsAvailable { get; set; }=true;
-       
 
+        [ForeignKey("User")]
+        public int SellerId { get; set; }
+
+        public ICollection<Sales> Sales { get; set; }
     }
 }

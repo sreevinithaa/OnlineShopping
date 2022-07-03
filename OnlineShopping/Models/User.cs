@@ -47,5 +47,9 @@ namespace OnlineShopping.Models
         [Required(ErrorMessage = "Please enter State"), MaxLength(30)]
         public string State { get; set; }
 
+        public ICollection<Sales> Buyers { get; set; }
+
+        public ICollection<Product> Products { get; set; }
+
     }
 }
