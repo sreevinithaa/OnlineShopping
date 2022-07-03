@@ -27,7 +27,7 @@ namespace OnlineShopping.Models
          public string Password { get; set; }
 
         [ScaffoldColumn(false)]
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; }= DateTime.Now;    
 
         public string UserType { get; set; }
 
