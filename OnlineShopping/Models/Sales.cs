@@ -15,6 +15,7 @@ namespace OnlineShopping.Models
         public int BuyerId { get; set; }
 
         public int Qantity { get; set; }
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
         [StringLength(10)]
         public string DeliveryType { get; set; }

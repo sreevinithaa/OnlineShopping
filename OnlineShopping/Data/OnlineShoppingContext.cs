@@ -17,5 +17,7 @@ namespace OnlineShopping.Data
         public DbSet<OnlineShopping.Models.User>? User { get; set; }
 
         public DbSet<OnlineShopping.Models.Product>? Product { get; set; }
+
+        public DbSet<OnlineShopping.Models.Sales>? Sales { get; set; }
     }
 }
